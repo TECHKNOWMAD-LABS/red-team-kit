@@ -1,0 +1,18 @@
+id: "CXD-001"
+category: cross_domain
+title: "Security-Finance Risk Coupling"
+statement: "Critical vulnerabilities discovered through red-teaming will directly impact stock valuations and cost of capital, creating a feedback loop where security incidents become financial events within 5-10 trading days."
+assumptions:
+  - "Market participants increasingly price in cybersecurity risk"
+  - "Vulnerability disclosure timelines are compressed to <10 days"
+  - "Correlation between breach severity and stock decline remains >0.6"
+evidence_required:
+  - "Historical correlation analysis between breach disclosures and stock performance"
+  - "CFO and investor sentiment data on security risk materiality"
+  - "Insurance pricing trends for cyber liability coverage"
+risk_level: high
+tags:
+  - cross_domain
+  - financial
+  - security
+  - market-risk

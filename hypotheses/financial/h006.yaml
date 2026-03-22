@@ -1,0 +1,22 @@
+id: "FIN-006"
+category: financial
+title: "CAC/LTV Ratio Deterioration"
+statement: "Customer Acquisition Cost to Lifetime Value ratios will deteriorate as cohorts mature and churn accelerates"
+assumptions:
+  - "LTV calculations use conservative 5-year customer lifetime assumptions"
+  - "Churn rates in years 3-5 will not exceed current annual rates"
+  - "Customer expansion revenue will materialize as projected"
+  - "CAC payback period will improve with scale"
+evidence_required:
+  - "Cohort-based LTV analysis with 3+ year history"
+  - "Churn rate trend by cohort age"
+  - "Expansion revenue realization rates"
+  - "CAC by channel and cohort"
+  - "Sensitivity analysis on churn and expansion assumptions"
+  - "Competitor LTV benchmarks"
+risk_level: high
+tags:
+  - financial
+  - unit-economics
+  - customer-economics
+  - retention

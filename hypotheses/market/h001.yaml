@@ -1,0 +1,18 @@
+id: "MKT-001"
+category: market
+title: "TAM Overestimation Through Market Aggregation"
+statement: "The Total Addressable Market is 40% smaller than claimed because segment aggregation ignores incompatible use cases and customer profiles."
+assumptions:
+  - "All vertical segments have equal TAM density"
+  - "Bottom-up and top-down TAM estimates converge to similar figures"
+  - "Customer acquisition cost scales linearly with market size"
+evidence_required:
+  - "Granular TAM breakdown by segment, use case, and customer profile"
+  - "Historical TAM vs actual market penetration data from comparable companies"
+  - "Customer willingness-to-pay by segment (primary research)"
+  - "Market saturation rates in adjacent industries"
+risk_level: high
+tags:
+  - market
+  - tam
+  - sizing

@@ -1,0 +1,20 @@
+id: "STR-003"
+category: strategic
+title: Platform Strategy Network Effects Win Market
+statement: "Network effects from platform strategy will dominate winner-take-most dynamics, making late competitors unable to accumulate sufficient participant density."
+assumptions:
+  - "Platform exhibits strong direct or indirect network effects"
+  - "Critical mass threshold is below 15% market penetration"
+  - "Participants show high switching costs once network reaches scale"
+  - "Supply-side fragmentation prevents competitor aggregation"
+evidence_required:
+  - "Network effect strength measured by usage growth vs participant growth correlation"
+  - "Competitor platform participation rates and stickiness metrics"
+  - "Minimum viable participant density for platform functionality"
+  - "Cross-platform portability and switching friction assessments"
+  - "Historical platform wars outcomes in analogous markets"
+risk_level: high
+tags:
+  - strategic
+  - platform-strategy
+  - network-effects

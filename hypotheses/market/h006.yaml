@@ -1,0 +1,19 @@
+id: "MKT-006"
+category: market
+title: "Market Entry Barriers: Structural Moats Do Not Exist"
+statement: "Claimed entry barriers (high CAC, regulatory complexity, distribution requirements) are surmountable by well-funded competitors, reducing time-to-parity from 18 months to 6 months."
+assumptions:
+  - "Regulatory approval timelines are immutable"
+  - "Distribution channels remain exclusive to incumbents"
+  - "Customer acquisition requires 24+ months relationship building"
+evidence_required:
+  - "Regulatory approval pathways and timelines (BATNA analysis)"
+  - "Distribution channel analysis: exclusivity terms and alternatives"
+  - "Competitor capability assessment: technical and financial resources"
+  - "Customer acquisition benchmarks: time-to-close by channel"
+  - "Legal barrier assessment: patents, licensing, certifications"
+risk_level: high
+tags:
+  - market
+  - entry
+  - barriers

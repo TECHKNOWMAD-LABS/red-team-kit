@@ -1,0 +1,18 @@
+id: "MKT-002"
+category: market
+title: "Market Timing Miscalculation: Premature Saturation"
+statement: "The market will saturate 18-24 months earlier than projections, reducing the viable growth window for customer acquisition by 40%."
+assumptions:
+  - "Adoption curves follow historical S-curve patterns"
+  - "Competitor entry timelines are predictable"
+  - "Customer switching costs remain constant over time"
+evidence_required:
+  - "Competitor product launch timeline and feature parity analysis"
+  - "Customer churn and replacement rates in the category"
+  - "Early adopter signal decay metrics (engagement, NPS trend)"
+  - "Market consolidation patterns in adjacent categories (5-year lookback)"
+risk_level: high
+tags:
+  - market
+  - timing
+  - adoption

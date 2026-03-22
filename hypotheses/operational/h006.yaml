@@ -1,0 +1,20 @@
+id: "OPS-006"
+category: operational
+title: "Supply Chain Resilience Exists Without Diversification"
+statement: "The organization assumes single-vendor dependencies (cloud provider, key libraries, SaaS tools) pose only low-moderate risk, but concentration creates implicit SLO amplification where a tier-1 outage cascades into complete unavailability."
+assumptions:
+  - "Vendor outages are rare and predictable"
+  - "Fallback mechanisms are cost-prohibitive and unnecessary"
+  - "Contract terms provide sufficient financial recourse for outages"
+  - "Team can quickly pivot to alternative vendors under incident pressure"
+evidence_required:
+  - "Vendor uptime vs. actual platform availability (SLA vs. real SLO)"
+  - "Blast radius assessment for top 10 dependencies"
+  - "Time-to-pivot cost estimates for critical single-source components"
+  - "Historical incident root cause analysis—vendor vs. internal attribution"
+  - "Customer impact per vendor outage (estimated from public incident records)"
+risk_level: high
+tags:
+  - operational
+  - supply-chain
+  - resilience

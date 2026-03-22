@@ -1,0 +1,22 @@
+id: "FIN-007"
+category: financial
+title: "Cash Flow Forecasting Timing Mismatch"
+statement: "Actual cash flow timing will diverge significantly from accrual revenue forecasts due to payment terms and receivables"
+assumptions:
+  - "Payment terms assumptions accurately reflect customer behavior"
+  - "Bad debt rates will not increase as customer base diversifies"
+  - "Days Sales Outstanding will improve with scale"
+  - "Upfront annual contracts will maintain current mix"
+evidence_required:
+  - "Historical cash collection curve by payment term"
+  - "Bad debt expense trend and age analysis"
+  - "Days Sales Outstanding by customer segment and geography"
+  - "Contract payment structure analysis"
+  - "Cash conversion cycle benchmarking"
+  - "Sensitivity analysis on DSO and bad debt assumptions"
+risk_level: high
+tags:
+  - financial
+  - cash-flow
+  - working-capital
+  - forecasting

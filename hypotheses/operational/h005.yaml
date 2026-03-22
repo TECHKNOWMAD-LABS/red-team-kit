@@ -1,0 +1,20 @@
+id: "OPS-005"
+category: operational
+title: "Infrastructure Reliability Is Platform-Agnostic"
+statement: "The organization assumes switching cloud providers, containerization strategies, or deployment orchestration tools will yield symmetric reliability improvements, but operational stability is primarily a function of organizational knowledge and muscle memory, not tooling."
+assumptions:
+  - "Platform maturity translates directly to operational maturity"
+  - "Tool migration doesn't introduce new failure modes"
+  - "Team competency with new infrastructure is latent, not taught"
+  - "Observability and incident response transfer across platforms"
+evidence_required:
+  - "Mean time to recovery (MTTR) before and after major platform changes"
+  - "Incident rate and severity distribution per infrastructure generation"
+  - "Runbook currency and team familiarity surveys post-migration"
+  - "On-call escalation patterns during and after infrastructure transitions"
+  - "Training hours per engineer on new tooling vs. new platform adoption curve"
+risk_level: high
+tags:
+  - operational
+  - infrastructure
+  - reliability

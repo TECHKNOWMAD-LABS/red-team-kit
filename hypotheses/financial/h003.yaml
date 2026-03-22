@@ -1,0 +1,21 @@
+id: "FIN-003"
+category: financial
+title: "Burn Rate Acceleration Post-Growth Phase"
+statement: "Operating burn rate will accelerate when growth phase ends, revealing structural cost inefficiencies"
+assumptions:
+  - "Headcount growth will remain proportional to revenue growth"
+  - "Sales and marketing efficiency will not decline as markets mature"
+  - "R&D spending can be maintained at current levels indefinitely"
+  - "Infrastructure costs will scale linearly with revenue"
+evidence_required:
+  - "Historical burn rate by phase (seed, series A, growth, scale)"
+  - "Opex breakdown and trend by major function"
+  - "CAC payback period trend over time"
+  - "Headcount to revenue ratio analysis"
+  - "Cash runway projection under conservative growth scenarios"
+risk_level: high
+tags:
+  - financial
+  - burn-rate
+  - cash-flow
+  - operational-efficiency

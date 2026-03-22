@@ -1,0 +1,22 @@
+id: "FIN-010"
+category: financial
+title: "Credit Risk from Customer Concentration"
+statement: "Revenue concentration among large customers creates unmanaged credit risk and limits pricing/margin power"
+assumptions:
+  - "Top 10 customers represent <30% of revenue"
+  - "Customer concentration risk is acceptable"
+  - "Major customers will not negotiate unfavorable payment terms"
+  - "Customer credit quality will not deteriorate"
+evidence_required:
+  - "Revenue concentration analysis (Herfindahl index)"
+  - "Top customer retention history and contract renewals"
+  - "Customer credit quality assessment"
+  - "Historical payment defaults and disputes"
+  - "Revenue dependency on key accounts over time"
+  - "Customer substitutability and switching cost analysis"
+risk_level: high
+tags:
+  - financial
+  - credit-risk
+  - concentration-risk
+  - customer-dependency

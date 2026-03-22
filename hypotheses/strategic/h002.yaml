@@ -1,0 +1,20 @@
+id: "STR-002"
+category: strategic
+title: First-Mover Advantage in Emerging Regulatory Framework
+statement: "Securing market position before regulatory standardization occurs creates durable competitive advantage through embedded switching costs and compliance lock-in."
+assumptions:
+  - "Regulatory framework will stabilize within 24-36 months"
+  - "Early compliance investments create barriers for later entrants"
+  - "Customer switching costs increase substantially post-regulation"
+  - "First-mover captures disproportionate share of compliant market"
+evidence_required:
+  - "Regulatory timeline and likely adoption dates from policy sources"
+  - "Switching cost analysis comparing pre- and post-regulation scenarios"
+  - "Customer acquisition cost for early adopters vs late entrants"
+  - "Competitor regulatory readiness assessments"
+  - "Market share capture rates in previously regulated adjacent markets"
+risk_level: high
+tags:
+  - strategic
+  - first-mover-advantage
+  - regulatory-positioning

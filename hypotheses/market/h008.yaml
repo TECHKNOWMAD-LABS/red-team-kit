@@ -1,0 +1,19 @@
+id: "MKT-008"
+category: market
+title: "Platform Dynamics: Rent Extraction Destroys Long-term Value"
+statement: "Platform operators will attempt rent extraction (higher take rates, exclusive listings, forced upgrades) within 24 months, destroying 35% of participant surplus and accelerating competitive defection."
+assumptions:
+  - "Early platform pricing is optimal for long-term retention"
+  - "Participants lack alternatives to current platform infrastructure"
+  - "Revenue growth can be achieved without margin compression"
+evidence_required:
+  - "Historical case studies: platform monetization timelines (Facebook, Uber, Amazon, App Store)"
+  - "Participant switching cost analysis by use case"
+  - "Alternative platform maturity assessment (competitive threats)"
+  - "Current participant margin compression risk (CAC vs lifetime value impact)"
+  - "Regulatory scrutiny on rent extraction practices (antitrust, fair dealing)"
+risk_level: medium
+tags:
+  - market
+  - platform-dynamics
+  - monetization

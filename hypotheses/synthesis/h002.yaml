@@ -1,0 +1,19 @@
+id: "SYN-002"
+category: synthesis
+title: "Multi-Signal Hypothesis Convergence"
+statement: "When red-team findings from multiple independent methods (threat modeling, attack surface analysis, code review, security assessment) all converge on the same vulnerability class, this creates high-confidence signals that should receive prioritized remediation."
+assumptions:
+  - "Independent analysis methods occasionally detect the same risks"
+  - "Convergence signals indicate systemic issues vs. analyst bias"
+  - "Organizations can prioritize based on convergence strength"
+evidence_required:
+  - "Methodology overlap analysis and independence assessment"
+  - "Tracking convergence events and correlation with actual exploited vulnerabilities"
+  - "Customer feedback on prioritization benefit from convergence signals"
+risk_level: low
+tags:
+  - synthesis
+  - signal-convergence
+  - validation
+  - prioritization
+  - confidence-building

@@ -1,0 +1,22 @@
+id: "FIN-005"
+category: financial
+title: "Margin Compression from Hidden Cost Drivers"
+statement: "Operating margins will compress due to hidden costs not accounted for in base financial model"
+assumptions:
+  - "All major cost categories have been identified"
+  - "Compliance and regulatory costs will remain negligible"
+  - "Warranty and returns costs are predictable"
+  - "Customer acquisition subsidies will not be necessary to maintain growth"
+evidence_required:
+  - "Activity-based costing analysis by product/segment"
+  - "Historical cost overrun analysis"
+  - "Warranty and support ticket root cause analysis"
+  - "Regulatory environment scan for emerging compliance costs"
+  - "Competitor margin benchmarking"
+  - "Customer acquisition discount erosion analysis"
+risk_level: high
+tags:
+  - financial
+  - margins
+  - cost-structure
+  - operational-risk

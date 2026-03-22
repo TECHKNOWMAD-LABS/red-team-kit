@@ -1,0 +1,20 @@
+id: "OPS-004"
+category: operational
+title: "Tech Debt Is a Controllable Accumulation Variable"
+statement: "Leadership assumes tech debt can be managed as a spreadsheet item—pay down X% per sprint—but actual debt accrual is driven by market pressure and hiring churn, creating a depletion treadmill where paydown never catches the accumulation rate."
+assumptions:
+  - "Tech debt paydown capacity is decoupled from feature velocity"
+  - "New hires inherit full institutional knowledge of systems"
+  - "Shortcuts taken under pressure don't compound"
+  - "Refactoring work is predictable and schedulable"
+evidence_required:
+  - "Debt accrual rate vs. paydown rate (quarterly trend)"
+  - "Ratio of bug-fix time to feature development time"
+  - "Code complexity metrics on legacy vs. new subsystems"
+  - "Incident duration and frequency correlation with debt hotspots"
+  - "Engineering time allocation (features vs. maintenance vs. debt)"
+risk_level: high
+tags:
+  - operational
+  - tech-debt
+  - quality

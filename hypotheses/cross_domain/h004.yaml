@@ -1,0 +1,19 @@
+id: "CXD-004"
+category: cross_domain
+title: "Strategic-Technical Misalignment"
+statement: "Enterprise security strategy will diverge from technical red-team findings, where board-level risk appetite statements conflict with execution-level vulnerability remediation capabilities, forcing customers to choose between strategic goals and tactical risk."
+assumptions:
+  - "Organizational silos separate security strategy from operations"
+  - "Board-level risk tolerance is 2-3x higher than operational risk capacity"
+  - "Red-team findings will expose this gap with specificity"
+evidence_required:
+  - "Customer interviews on strategy-execution alignment"
+  - "Industry benchmarks on board risk appetite vs. operational capability"
+  - "Case studies of organizations forced to choose between strategic direction and vulnerability remediation"
+risk_level: medium
+tags:
+  - cross_domain
+  - strategy
+  - operations
+  - alignment
+  - organizational-risk

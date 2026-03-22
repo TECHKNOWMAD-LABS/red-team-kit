@@ -1,0 +1,20 @@
+id: "OPS-003"
+category: operational
+title: "Process Efficiency Gains Are Capture-Proof"
+statement: "The organization assumes process improvements will be retained and compounded, but in practice, teams revert to old patterns under deadline pressure, negating 60%+ of documented efficiency gains within 6 months."
+assumptions:
+  - "Documented processes are followed without enforcement"
+  - "Slack capacity is used to maintain new processes"
+  - "Culture change happens passively after rollout"
+  - "Process improvements don't require ongoing sponsorship"
+evidence_required:
+  - "Deviation rate from documented processes (sample audits)"
+  - "Velocity trend post-process change (6-month window)"
+  - "Time spent on rework vs. original implementation"
+  - "Manager enforcement metrics and escalation patterns"
+  - "Slack capacity utilization during high-pressure periods"
+risk_level: high
+tags:
+  - operational
+  - efficiency
+  - process

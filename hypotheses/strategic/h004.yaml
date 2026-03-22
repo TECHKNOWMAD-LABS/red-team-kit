@@ -1,0 +1,20 @@
+id: "STR-004"
+category: strategic
+title: Vertical Integration Secures Supply Chain Resilience
+statement: "Backward vertical integration into critical supply chain stages eliminates single points of failure and creates proprietary cost advantages competitors cannot replicate."
+assumptions:
+  - "Integrated supply stages have >20% margin improvement potential"
+  - "Supply base concentration creates dependency risk for competitors"
+  - "Integration capital is recoverable within 5-year ROI window"
+  - "Proprietary process improvements in integrated stages are defensible"
+evidence_required:
+  - "Supply chain disruption frequency and impact analysis"
+  - "Margin structure in integrated vs non-integrated segments"
+  - "Capital requirements and payback period for integration scenarios"
+  - "Proprietary process IP potential in target supply stages"
+  - "Competitor sourcing fragility and concentration risk"
+risk_level: medium
+tags:
+  - strategic
+  - vertical-integration
+  - supply-chain

@@ -1,0 +1,19 @@
+id: "META-002"
+category: meta
+title: "Data Quality Degradation Over Time"
+statement: "Red-team analysis relies on data inputs (threat intelligence, vulnerability feeds, customer infrastructure telemetry) that degrade in accuracy and coverage over time, causing hypothesis validity to decline without active data quality monitoring."
+assumptions:
+  - "Threat intelligence sources have latency of 1-3 weeks"
+  - "Vulnerability databases have false positive rates of 5-15%"
+  - "Customer-provided telemetry is incomplete by 20-30% on average"
+evidence_required:
+  - "Data freshness audit across intelligence sources"
+  - "Comparison of hypothesis predictions against actual threats observed"
+  - "Customer telemetry completeness analysis and coverage gaps"
+risk_level: medium
+tags:
+  - meta
+  - data-quality
+  - measurement
+  - input-validity
+  - accuracy

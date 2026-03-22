@@ -1,0 +1,19 @@
+id: "META-001"
+category: meta
+title: "Red-Team Hypothesis Validation Bias"
+statement: "Red-team hypotheses suffer from confirmation bias where initial assumptions about threat severity influence evidence interpretation, leading to systematic overestimation of high-risk scenarios and underestimation of mitigation efficacy."
+assumptions:
+  - "Analysts unconsciously weight confirming evidence more heavily"
+  - "Initial threat framing creates anchoring bias"
+  - "Null results receive less investigation than positive results"
+evidence_required:
+  - "Comparison of initial hypothesis assumptions vs. actual evidence collected"
+  - "Analyst agreement rates on vulnerability severity before vs. after evidence review"
+  - "Follow-up data on whether initial high-risk assessments were calibrated accurately"
+risk_level: high
+tags:
+  - meta
+  - cognitive-bias
+  - validation
+  - methodology
+  - analysis-quality

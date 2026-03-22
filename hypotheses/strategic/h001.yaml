@@ -1,0 +1,20 @@
+id: "STR-001"
+category: strategic
+title: Competitive Positioning Through Cost Leadership
+statement: "A cost-leadership strategy in the current market creates sustainable competitive advantage through operational efficiency and margin compression of competitors."
+assumptions:
+  - "Competitors cannot match our cost structure within 18 months"
+  - "Price elasticity favors lower-cost providers in our segment"
+  - "Operational efficiency gains are difficult to reverse-engineer"
+  - "Market demand remains stable or grows during transition period"
+evidence_required:
+  - "Cost per unit comparison with top 3 competitors over time"
+  - "Market share trending in low-cost segment vs premium segment"
+  - "Customer churn rates in low-cost vs premium tiers"
+  - "Supplier switching costs and exclusive agreements in place"
+  - "Manufacturing or delivery efficiency benchmarks"
+risk_level: high
+tags:
+  - strategic
+  - competitive-positioning
+  - cost-structure

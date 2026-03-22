@@ -1,0 +1,22 @@
+id: "FIN-008"
+category: financial
+title: "Funding Runway Miscalculation"
+statement: "Estimated funding runway does not account for accelerating burn or failed financing attempts, creating existential risk"
+assumptions:
+  - "Burn rate will remain stable or decrease"
+  - "Follow-on funding will be available at projected timeline and valuation"
+  - "Capital efficiency metrics justify continued investor confidence"
+  - "Market conditions will remain favorable for fundraising"
+evidence_required:
+  - "Monthly burn trend analysis with seasonality adjustment"
+  - "Runway calculation under stress scenarios (-20%, -40%, -60% growth)"
+  - "Historical fundraising timelines and probability analysis"
+  - "Investor sentiment and market comparables"
+  - "Contingency cash reserve adequacy"
+  - "Alternative funding source availability"
+risk_level: high
+tags:
+  - financial
+  - funding
+  - cash-runway
+  - existential-risk

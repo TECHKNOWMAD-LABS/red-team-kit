@@ -1,0 +1,21 @@
+id: "FIN-004"
+category: financial
+title: "Pricing Power Assumption in Competitive Markets"
+statement: "Assumed pricing power does not materialize due to competitive commoditization and customer bargaining leverage"
+assumptions:
+  - "Pricing can be increased 10-15% annually without customer churn"
+  - "Switching costs are high enough to prevent price-driven attrition"
+  - "Product differentiation will justify premium pricing"
+  - "Enterprise customers have limited alternative vendors"
+evidence_required:
+  - "Historical price elasticity by customer segment"
+  - "Competitor pricing trajectory and discounting patterns"
+  - "Customer willingness-to-pay survey data"
+  - "Churn analysis correlated with price changes"
+  - "Win/loss analysis on pricing objections"
+risk_level: medium
+tags:
+  - financial
+  - pricing
+  - market-risk
+  - competitive-dynamics

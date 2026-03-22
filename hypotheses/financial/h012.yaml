@@ -1,0 +1,23 @@
+id: "FIN-012"
+category: financial
+title: "Financial Model Sensitivity Blindspots"
+statement: "Financial model lacks stress testing for key variables, creating blind spots on survival probability under adverse scenarios"
+assumptions:
+  - "One-way and two-way sensitivity analyses capture all critical variables"
+  - "Monte Carlo simulations are unnecessary for planning"
+  - "Historical correlations between variables are stable"
+  - "Black swan events are not material to model outcomes"
+evidence_required:
+  - "Tornado diagram identifying most sensitive variables"
+  - "Two-way sensitivity tables for revenue × margin and growth × CAC"
+  - "Scenario analysis (base, bull, bear, downside)"
+  - "Break-even analysis for critical metrics"
+  - "Correlation matrix of input assumptions"
+  - "Value-at-risk calculation at 90th percentile downside"
+  - "Stress test results under recession/market downturn assumptions"
+risk_level: medium
+tags:
+  - financial
+  - model-risk
+  - forecasting
+  - stress-testing

@@ -1,0 +1,21 @@
+id: "FIN-001"
+category: financial
+title: "Revenue Projection Overestimation"
+statement: "Revenue projections assume linear customer acquisition without accounting for market saturation and competitive pressure"
+assumptions:
+  - "Customer acquisition will scale linearly with marketing spend"
+  - "Market demand is unlimited and unbounded"
+  - "No major competitor will capture market share during projection period"
+  - "Price elasticity remains constant across market segments"
+evidence_required:
+  - "Historical CAC trend analysis across cohorts"
+  - "Market size validation from third-party research"
+  - "Competitive win/loss analysis"
+  - "Customer retention curves by acquisition channel"
+  - "Price sensitivity testing data"
+risk_level: high
+tags:
+  - financial
+  - revenue
+  - market-risk
+  - forecasting

@@ -1,0 +1,19 @@
+id: "SYN-001"
+category: synthesis
+title: "Portfolio Risk Concentration"
+statement: "Red-team findings across a customer portfolio will reveal systemic concentration risk where 70-80% of total enterprise risk is concentrated in 2-3 business units or technical domains, creating a cascade vulnerability where addressing one finding multiplies risk elsewhere."
+assumptions:
+  - "Findings are not uniformly distributed across the organization"
+  - "Risk mitigation in one area creates blind spots in another"
+  - "Organizational structure amplifies certain vulnerability classes"
+evidence_required:
+  - "Heat maps of findings concentration by business unit"
+  - "Dependency analysis showing cross-functional risk coupling"
+  - "Case studies showing unintended consequences of localized remediation"
+risk_level: high
+tags:
+  - synthesis
+  - portfolio-risk
+  - concentration
+  - systemic-risk
+  - cascading-failure

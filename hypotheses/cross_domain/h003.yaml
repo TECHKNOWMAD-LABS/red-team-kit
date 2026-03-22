@@ -1,0 +1,19 @@
+id: "CXD-003"
+category: cross_domain
+title: "Market-Regulatory Divergence"
+statement: "Market demand for red-teaming services will outpace regulatory frameworks, creating a mismatch where customers face legal liability for acting on red-team findings that later conflict with regulatory guidance."
+assumptions:
+  - "Regulatory frameworks lag market practices by 12-18 months"
+  - "Red-team findings will surface compliance gaps"
+  - "Regulators will interpret compliance differently than market practice"
+evidence_required:
+  - "Timeline gap analysis between market adoption and regulatory codification"
+  - "Legal case precedents around acting on advisory findings"
+  - "Regulatory guidance release schedules and change frequency"
+risk_level: medium
+tags:
+  - cross_domain
+  - regulatory
+  - market
+  - legal-risk
+  - compliance

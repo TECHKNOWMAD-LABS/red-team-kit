@@ -1,0 +1,20 @@
+id: "STR-007"
+category: strategic
+title: Acquisition Strategy Consolidates Market Fragmentation
+statement: "Strategic acquisition of competitors with complementary customer bases or technology creates 20%+ margin accretion and reduces market fragmentation below sustainable threshold."
+assumptions:
+  - "Fragmented market has 15+ meaningful competitors with <10% share each"
+  - "Target acquisition prices are below 4x revenue in current market conditions"
+  - "Integration synergies are realizable within 18 months of closing"
+  - "Customer overlap enables cost consolidation without material churn"
+evidence_required:
+  - "Competitor valuation benchmarks and recent M&A transaction multiples"
+  - "Customer overlap analysis and churn risk assessment by target"
+  - "Integration cost models and synergy realization timelines"
+  - "Regulatory approval pathway and antitrust risk assessment"
+  - "Post-acquisition market concentration and sustained pricing power"
+risk_level: high
+tags:
+  - strategic
+  - acquisition-strategy
+  - market-consolidation

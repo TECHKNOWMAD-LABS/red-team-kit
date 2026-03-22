@@ -1,0 +1,20 @@
+id: "OPS-008"
+category: operational
+title: "Quality Control Can Be Delegated Without Ownership Decay"
+statement: "The organization assumes quality metrics can be automated and ownership distributed across teams, but quality is an emergent property of shared accountability and cultural vigilance; delegated QC becomes performative compliance, masking defect rates."
+assumptions:
+  - "Automated tests are a substitute for human code review rigor"
+  - "Quality ownership is diffuse without degrading outcomes"
+  - "Defect rates are visible through metrics alone"
+  - "Test coverage percentage correlates with actual product reliability"
+evidence_required:
+  - "Test coverage vs. customer-reported bug rate (sample products)"
+  - "Post-release defect discovery rate by team/codebase"
+  - "Code review comment density and resolution time by reviewer seniority"
+  - "Production incident severity distribution vs. test suite comprehensiveness"
+  - "Customer satisfaction scores correlated with quality metrics"
+risk_level: medium
+tags:
+  - operational
+  - quality
+  - control

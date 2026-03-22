@@ -1,0 +1,18 @@
+id: "TMP-002"
+category: temporal
+title: "Enterprise Adoption S-Curve Inflection Point"
+statement: "Enterprise adoption of red-team-as-a-service will inflect from early adopter phase (5-15% penetration) to early majority phase (15-50% penetration) between Q3-Q4 2026, driven by demonstrated ROI from 2025 pilots."
+assumptions:
+  - "Pilot results show measurable reduction in security incidents"
+  - "Reference customers become publicly available"
+  - "Competitive offerings remain limited through end of Q3"
+evidence_required:
+  - "Customer acquisition velocity trends month-over-month"
+  - "Pilot success metrics and customer case studies"
+  - "Competitive landscape analysis and new entrant timelines"
+risk_level: medium
+tags:
+  - temporal
+  - adoption
+  - s-curve
+  - market-timing

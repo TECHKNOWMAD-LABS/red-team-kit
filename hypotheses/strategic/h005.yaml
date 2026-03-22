@@ -1,0 +1,20 @@
+id: "STR-005"
+category: strategic
+title: Partnership Leverage Accelerates Market Penetration
+statement: "Strategic partnerships with ecosystem leaders reduce time-to-market and create co-marketing leverage that independent expansion cannot match within equivalent timeframe."
+assumptions:
+  - "Partner distribution reaches 40%+ of addressable market"
+  - "Co-selling reduces customer acquisition cost by 30%+ vs independent"
+  - "Partner reputational transfer creates credibility lift"
+  - "Partnership exclusivity can be negotiated in target segments"
+evidence_required:
+  - "Partner reach quantification across geographic and segment tiers"
+  - "Customer acquisition cost comparison (partner-sourced vs direct)"
+  - "Co-selling conversion rates vs independent sales pipeline"
+  - "Brand perception lift attributable to partner endorsement"
+  - "Partnership exclusivity scope and enforcement mechanisms"
+risk_level: medium
+tags:
+  - strategic
+  - partnership-leverage
+  - market-acceleration

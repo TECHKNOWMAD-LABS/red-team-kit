@@ -1,0 +1,21 @@
+id: "FIN-002"
+category: financial
+title: "Unit Economics Deterioration Under Scale"
+statement: "Unit economics that appear profitable at current volume will degrade as operational leverage limits are reached"
+assumptions:
+  - "COGS ratios will improve with scale due to better supplier negotiations"
+  - "Gross margin expansion will continue indefinitely"
+  - "Fulfillment costs will decrease per unit as volume increases"
+  - "Customer support costs will not increase materially with scale"
+evidence_required:
+  - "Gross margin by customer cohort and acquisition period"
+  - "COGS trend analysis comparing small vs. large orders"
+  - "Support cost per customer lifecycle"
+  - "Fulfillment efficiency metrics at different scale thresholds"
+  - "Infrastructure cost projections"
+risk_level: high
+tags:
+  - financial
+  - unit-economics
+  - operational-risk
+  - scalability

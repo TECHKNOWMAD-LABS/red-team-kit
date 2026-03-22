@@ -1,0 +1,19 @@
+id: "META-004"
+category: meta
+title: "Model Reliability Under Distribution Shift"
+statement: "Red-team hypotheses generated from historical attack patterns will fail when threat landscape shifts (e.g., new attack vectors, zero-day discovery), because the underlying models and assumptions assume a stable threat distribution."
+assumptions:
+  - "Threat landscape experiences significant shifts every 18-24 months"
+  - "Current methodology relies on empirical pattern matching"
+  - "Adaptation capability is low due to rigid hypothesis generation process"
+evidence_required:
+  - "Historical analysis of major threat landscape shifts"
+  - "Hypothesis accuracy pre- vs. post-shift"
+  - "Methodology flexibility assessment and change velocity"
+risk_level: high
+tags:
+  - meta
+  - model-reliability
+  - distribution-shift
+  - methodology
+  - adaptability

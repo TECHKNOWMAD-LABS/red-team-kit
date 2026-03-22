@@ -1,0 +1,19 @@
+id: "SYN-004"
+category: synthesis
+title: "System Resilience Beyond Individual Vulnerabilities"
+statement: "Enterprise resilience depends on systemic redundancy and graceful degradation properties that are orthogonal to individual vulnerability counts, where organizations with high vulnerability counts but strong resilience properties are lower risk than organizations with low vulnerability counts but fragile architectures."
+assumptions:
+  - "Vulnerability count is a proxy, not the actual risk metric"
+  - "Resilience properties are architecture-dependent"
+  - "Customers conflate remediation activity with actual risk reduction"
+evidence_required:
+  - "Correlation between vulnerability density and actual incident frequency"
+  - "Architecture patterns analysis across customer base"
+  - "Resilience property assessment frameworks and outcomes"
+risk_level: medium
+tags:
+  - synthesis
+  - system-resilience
+  - architecture
+  - proxy-metrics
+  - risk-measurement

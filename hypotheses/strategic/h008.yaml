@@ -1,0 +1,21 @@
+id: "STR-008"
+category: strategic
+title: Defensibility Through Proprietary Data Moat
+statement: "Accumulated proprietary data creates a defensible moat that prevents competitor replication through network effects and algorithmic advantage that compounds over time."
+assumptions:
+  - "Data asymmetry creates 2+ year development gap for competitors"
+  - "Algorithm performance improves measurably with data scale (>10x data = >20% improvement)"
+  - "Data exclusivity is legally defensible and difficult to access"
+  - "Proprietary insights drive measurable customer value and switching costs"
+evidence_required:
+  - "Data volume and growth trajectory benchmarked against competitors"
+  - "Algorithm performance correlation with data scale in our domain"
+  - "Customer lock-in strength attributable to data-driven insights"
+  - "IP defensibility assessment (trade secrets, patents, contractual)"
+  - "Reverse-engineering difficulty and time-to-capability for competitors"
+  - "Customer switching cost premium for data-intensive features"
+risk_level: low
+tags:
+  - strategic
+  - defensibility
+  - data-moat

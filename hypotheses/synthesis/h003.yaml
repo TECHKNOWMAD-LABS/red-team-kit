@@ -1,0 +1,19 @@
+id: "SYN-003"
+category: synthesis
+title: "Emergent Vulnerability Patterns"
+statement: "Individual vulnerabilities identified through red-teaming combine into emergent risk patterns that are invisible when vulnerabilities are analyzed in isolation, where fixing individual issues without addressing systemic patterns creates false sense of security."
+assumptions:
+  - "Vulnerabilities interact in non-linear ways"
+  - "Isolated remediation does not reduce systemic risk proportionally"
+  - "Pattern recognition requires analysis at enterprise scale"
+evidence_required:
+  - "Analysis of vulnerability chains and interdependencies"
+  - "Case studies showing how individual fixes failed to prevent incidents"
+  - "System-level risk modeling before and after localized remediation"
+risk_level: high
+tags:
+  - synthesis
+  - emergent-patterns
+  - system-thinking
+  - vulnerability-chains
+  - non-linear-risk

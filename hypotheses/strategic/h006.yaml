@@ -1,0 +1,20 @@
+id: "STR-006"
+category: strategic
+title: Geographic Expansion Establishes Regional Moat
+statement: "Sequential geographic expansion into regions with structural differences creates defensible regional leadership that prevents global competitor consolidation."
+assumptions:
+  - "Each region has unique supply chain, regulatory, or customer dynamics"
+  - "Regional market leader status generates 15%+ margin premium"
+  - "Global competitors cannot efficiently manage multi-regional differences simultaneously"
+  - "Regional networks and relationships take 2+ years to build"
+evidence_required:
+  - "Regional regulatory complexity and compliance cost differentials"
+  - "Regional supply chain structure and partner dependency maps"
+  - "Customer preference variations by geography (price, feature, service)"
+  - "Competitor footprint penetration by region and growth rates"
+  - "Regional market size and margin sustainability projections"
+risk_level: medium
+tags:
+  - strategic
+  - geographic-expansion
+  - regional-moat

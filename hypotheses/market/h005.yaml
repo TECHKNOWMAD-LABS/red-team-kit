@@ -1,0 +1,19 @@
+id: "MKT-005"
+category: market
+title: "Demand Elasticity: Price Ceiling is 30% Lower Than Modeled"
+statement: "Price elasticity analysis underestimated customer cost sensitivity, and the true demand ceiling sits 30% below current pricing strategy, reducing gross margins by 25%."
+assumptions:
+  - "Willingness-to-pay remains stable across price tiers"
+  - "Competitor pricing does not trigger demand destruction"
+  - "Customer value perception correlates directly with product feature set"
+evidence_required:
+  - "Elasticity testing data (price experiments, A/B tests, cohort analysis)"
+  - "Competitor price monitoring and win/loss analysis"
+  - "Customer discount request frequency and approval rates"
+  - "Churn analysis by price band"
+  - "Market research on acceptable price range (primary interviews)"
+risk_level: medium
+tags:
+  - market
+  - pricing
+  - elasticity

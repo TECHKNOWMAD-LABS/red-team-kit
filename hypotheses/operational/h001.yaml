@@ -1,0 +1,20 @@
+id: "OPS-001"
+category: operational
+title: "Team Scalability Assumptions Are Linear"
+statement: "The organization assumes team productivity scales linearly with headcount, but communication overhead grows quadratically, creating a false ceiling on effective scaling."
+assumptions:
+  - "Adding 10 engineers increases output by 10x"
+  - "Onboarding time remains constant regardless of team size"
+  - "Cross-functional communication friction doesn't increase materially"
+  - "Leadership bandwidth doesn't become a constraint"
+evidence_required:
+  - "Communication pathways per engineer over time"
+  - "Onboarding duration trend data (last 12 months)"
+  - "Velocity per head for cohorts hired at different scales"
+  - "Meeting time per engineer as team grows"
+  - "Deployment frequency vs. team size correlation"
+risk_level: high
+tags:
+  - operational
+  - scalability
+  - team-structure

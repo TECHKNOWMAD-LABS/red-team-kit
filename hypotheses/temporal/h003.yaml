@@ -1,0 +1,18 @@
+id: "TMP-003"
+category: temporal
+title: "Seasonal Budget Allocation Cliff"
+statement: "Corporate security spending will spike in Q4 due to year-end budget exhaustion dynamics, but this will be 30-40% lower in H1 2027 as IT budgets reset, creating a revenue cliff for red-team services."
+assumptions:
+  - "Enterprise budget cycles follow fiscal year ends"
+  - "Security remains discretionary spend subject to budget pressure"
+  - "Renewal rates do not exceed 60% in the subsequent budget cycle"
+evidence_required:
+  - "Historical quarterly revenue patterns across security SaaS benchmarks"
+  - "Customer renewal rates by cohort and budget cycle phase"
+  - "IT budget allocation surveys and CFO guidance"
+risk_level: medium
+tags:
+  - temporal
+  - seasonality
+  - revenue
+  - budget-cycles

@@ -1,0 +1,19 @@
+id: "MKT-004"
+category: market
+title: "Customer Segmentation Mismatch: Wrong Primary Persona"
+statement: "The identified primary customer segment (high-intent early adopters) represents only 12% of addressable demand, while the actual high-volume segment (pragmatists) has half the unit economics."
+assumptions:
+  - "Early adopter needs represent the broader market demand"
+  - "Customer segmentation is stable across product lifecycle"
+  - "Unit economics remain consistent across buyer personas"
+evidence_required:
+  - "Customer segment distribution analysis (width of TAM across personas)"
+  - "Willingness-to-pay by persona (primary interviews, pricing research)"
+  - "Unit economics comparison: CAC, LTV, and ARPU by customer type"
+  - "Product fit satisfaction scores by persona"
+  - "Churn rate and expansion revenue by customer segment"
+risk_level: high
+tags:
+  - market
+  - segmentation
+  - personas

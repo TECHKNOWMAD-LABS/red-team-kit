@@ -1,0 +1,18 @@
+id: "TMP-004"
+category: temporal
+title: "Threat Intelligence Decay and Refresh Cycles"
+statement: "Red-team hypotheses generated against 2024-2025 threat models will degrade in relevance by Q2 2027 unless actively refreshed, reducing customer ROI unless the platform adds continuous threat model updating capabilities."
+assumptions:
+  - "Threat landscapes evolve faster than traditional strategic planning cycles"
+  - "Customers expect threat data freshness of <3 months"
+  - "Competitors will offer threat intelligence refresh services"
+evidence_required:
+  - "Customer feedback on hypothesis age and relevance"
+  - "Threat model change velocity analysis from MITRE, CIS"
+  - "Competitive offerings around threat intelligence updates"
+risk_level: medium
+tags:
+  - temporal
+  - threat-intelligence
+  - product-lifecycle
+  - refresh-cycles

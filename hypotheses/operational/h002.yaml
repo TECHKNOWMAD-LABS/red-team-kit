@@ -1,0 +1,20 @@
+id: "OPS-002"
+category: operational
+title: "Hiring Velocity Can Be Sustained Indefinitely"
+statement: "Leadership believes the organization can maintain current hiring velocity (X hires/month) without degrading culture, quality, or onboarding effectiveness, but organizational bandwidth and talent pool constraints will force non-linear decay."
+assumptions:
+  - "Top-of-funnel yield remains constant at scale"
+  - "Interview process doesn't need to expand or tighten"
+  - "Onboarding infrastructure can absorb 2x current hiring rate"
+  - "Manager capacity per direct report stays stable"
+evidence_required:
+  - "Historical offer acceptance rate vs. hiring volume"
+  - "Time-to-productivity for recent cohorts"
+  - "Manager span of control and 1:1 time allocation"
+  - "Employee net promoter score (eNPS) over hiring ramps"
+  - "Turnover rate correlation with hiring velocity"
+risk_level: high
+tags:
+  - operational
+  - hiring
+  - velocity

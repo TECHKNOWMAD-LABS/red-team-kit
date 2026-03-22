@@ -1,0 +1,22 @@
+id: "FIN-009"
+category: financial
+title: "Currency Risk in Multi-Geography Operations"
+statement: "Foreign exchange exposure will create material earnings volatility and erode profitability in non-home currency operations"
+assumptions:
+  - "Exchange rate movements will be within ±15% of historical averages"
+  - "Natural hedging from local COGS will offset revenue FX impact"
+  - "FX losses are acceptable operational variance"
+  - "Transfer pricing policies are optimal for tax efficiency"
+evidence_required:
+  - "Revenue and COGS breakdown by currency"
+  - "Historical FX impact on operating margins"
+  - "Quarterly earnings volatility analysis"
+  - "Hedging strategy effectiveness"
+  - "Competitor FX exposure and hedging practices"
+  - "Tax impact of transfer pricing policies"
+risk_level: medium
+tags:
+  - financial
+  - currency-risk
+  - fx-exposure
+  - global-operations

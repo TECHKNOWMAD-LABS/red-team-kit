@@ -1,0 +1,19 @@
+id: "CXD-002"
+category: cross_domain
+title: "Operations-Technology Risk Dependency"
+statement: "Operational resilience of red-teaming services depends on technology infrastructure that introduces new single points of failure, where platform outages will create cascading failures across customer security programs."
+assumptions:
+  - "Red-team platforms become mission-critical security infrastructure"
+  - "Customers integrate results into operational security workflows"
+  - "Redundancy and failover capabilities remain undeployed until after first major incident"
+evidence_required:
+  - "Architecture review of platform resilience and disaster recovery"
+  - "Customer dependency mapping and integration depth analysis"
+  - "Historical SaaS outage impact on dependent workflows"
+risk_level: high
+tags:
+  - cross_domain
+  - operations
+  - technology
+  - resilience
+  - single-point-of-failure

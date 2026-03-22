@@ -1,0 +1,18 @@
+id: "TMP-001"
+category: temporal
+title: "Q2-Q3 Regulatory Approval Window Compression"
+statement: "Major regulatory approvals for AI systems will compress into Q3 2026, creating a bottleneck effect where delayed decisions early in the process cascade into deployment delays throughout the fiscal year."
+assumptions:
+  - "Current approval timelines average 6-8 months from application to decision"
+  - "Q2 regulatory agency staffing levels remain constant"
+  - "No unexpected emergencies divert regulatory attention"
+evidence_required:
+  - "Approval decision velocity metrics from SEC, FTC, and international regulators"
+  - "Application backlog sizes and aging analytics"
+  - "Staffing and budget allocation changes at regulatory agencies"
+risk_level: high
+tags:
+  - temporal
+  - regulatory
+  - bottleneck
+  - deployment-risk

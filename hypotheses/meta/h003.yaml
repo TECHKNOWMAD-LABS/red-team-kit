@@ -1,0 +1,19 @@
+id: "META-003"
+category: meta
+title: "Red-Team Expertise Over-Concentration"
+statement: "Red-team hypothesis quality depends heavily on individual analyst expertise, creating a concentration risk where small teams of senior analysts drive disproportionate value, and junior analysts produce lower-quality hypotheses that appear valid due to methodological standardization."
+assumptions:
+  - "Hypothesis quality correlates strongly with analyst seniority"
+  - "Methodology provides false confidence in hypothesis validity"
+  - "Organization lacks early warning system for low-quality analysis"
+evidence_required:
+  - "Quality metrics comparison between senior and junior analysts"
+  - "Historical accuracy tracking by analyst tenure"
+  - "Peer review rejection rates and rework analysis"
+risk_level: medium
+tags:
+  - meta
+  - team-capability
+  - expertise
+  - quality-variation
+  - skill-concentration

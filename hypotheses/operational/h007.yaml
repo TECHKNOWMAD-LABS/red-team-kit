@@ -1,0 +1,20 @@
+id: "OPS-007"
+category: operational
+title: "Operational Leverage Scales with Revenue, Not Headcount"
+statement: "Leadership assumes operational leverage (revenue per employee) grows automatically with scale and maturity, but in practice, it deteriorates as organizational overhead (compliance, security, HR infrastructure) grows faster than core engineering capacity."
+assumptions:
+  - "Administrative headcount grows linearly with scale"
+  - "Core product engineering scales faster than overhead functions"
+  - "Revenue growth compounds at current rates indefinitely"
+  - "Process debt doesn't erode engineering productivity"
+evidence_required:
+  - "Revenue per employee trend (annualized, last 24 months)"
+  - "Engineering headcount vs. total headcount ratio over time"
+  - "Overhead cost per engineering team member (salary + infrastructure)"
+  - "Feature velocity per engineer vs. organizational size correlation"
+  - "Time spent on non-product work (process, compliance, admin) per quarter"
+risk_level: medium
+tags:
+  - operational
+  - leverage
+  - efficiency

@@ -1,0 +1,22 @@
+id: "FIN-011"
+category: financial
+title: "Cost Structure Scalability Failure"
+statement: "Fixed cost structure will not scale appropriately to support revenue growth without material margin degradation"
+assumptions:
+  - "Fixed costs are properly categorized and truly fixed"
+  - "Technology infrastructure will scale sub-linearly with growth"
+  - "Headcount productivity will improve with scale"
+  - "Office and facilities costs can flex with headcount"
+evidence_required:
+  - "Fixed vs. variable cost breakdown by function"
+  - "Infrastructure cost per revenue unit trend"
+  - "Revenue per employee trend and benchmarks"
+  - "Historical capex requirements for growth increments"
+  - "Operational leverage analysis by scale threshold"
+  - "Sensitivity of breakeven point to revenue growth rate"
+risk_level: high
+tags:
+  - financial
+  - cost-structure
+  - scalability
+  - operational-leverage

@@ -1,0 +1,19 @@
+id: "MKT-003"
+category: market
+title: "Moat Erosion: Defensibility Claims Are Fragile"
+statement: "Claimed competitive moats (proprietary data, switching costs, brand) decay 50% faster than assumed, leaving commodity-level defensibility within 3 years."
+assumptions:
+  - "Switching costs compound over time with vendor lock-in"
+  - "Proprietary algorithms remain difficult to replicate"
+  - "Brand loyalty transcends price competition"
+evidence_required:
+  - "Quantified switching cost per customer segment (retention cost vs replacement cost)"
+  - "Competitor reverse engineering timeline (feature parity analysis)"
+  - "Customer retention rate under price pressure from entrants"
+  - "Patent and IP landscape threat assessment"
+  - "Brand preference elasticity to competitive pricing"
+risk_level: high
+tags:
+  - market
+  - moats
+  - defensibility

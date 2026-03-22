@@ -1,0 +1,19 @@
+id: "MKT-007"
+category: market
+title: "Network Effects: Liquidity Problem Surfaces at 15% Penetration"
+statement: "Network effects asymptote at 15% market penetration due to participant liquidity constraints, creating a ceiling that growth marketing cannot overcome."
+assumptions:
+  - "Network effects scale linearly with user growth"
+  - "Two-sided platform liquidity improves predictably with supply and demand"
+  - "User retention improves as network reaches critical mass"
+evidence_required:
+  - "Historical network effect curves from comparable platforms (Uber, OpenTable, Airbnb)"
+  - "Current supply/demand liquidity metrics and ratio analysis"
+  - "User retention cohort analysis: impact of network size on churn"
+  - "Participant feedback on market thickness and value perception"
+  - "Willingness-to-participate data: supply-side friction points"
+risk_level: high
+tags:
+  - market
+  - network-effects
+  - platform-dynamics
