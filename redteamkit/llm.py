@@ -9,7 +9,7 @@ import time
 from typing import Any
 
 import httpx
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 logger = logging.getLogger(__name__)
 
@@ -24,6 +24,13 @@ class LLMConfig(BaseModel):
     temperature: float = Field(default=0.7, ge=0.0, le=2.0)
     max_tokens: int = Field(default=2048, gt=0)
     timeout: float = Field(default=30.0, gt=0)
+
+    @field_validator("base_url")
+    @classmethod
+    def validate_base_url(cls, v: str) -> str:
+        if not v.startswith(("https://", "http://")):
+            raise ValueError("base_url must start with https:// or http://")
+        return v.rstrip("/")
 
     @classmethod
     def from_env(cls) -> LLMConfig:
