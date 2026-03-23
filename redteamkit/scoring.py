@@ -11,6 +11,8 @@ from redteamkit.agent import Critique
 
 
 class Verdict(str, Enum):
+    """Assessment outcome for a hypothesis after adversarial review."""
+
     ROBUST = "robust"
     CONDITIONAL = "conditional"
     WEAK = "weak"
@@ -18,6 +20,8 @@ class Verdict(str, Enum):
 
 
 class ScoreBreakdown(BaseModel):
+    """Four-axis breakdown of hypothesis robustness, each scored 0.0–1.0."""
+
     evidence_strength: float = Field(ge=0.0, le=1.0)
     assumption_quality: float = Field(ge=0.0, le=1.0)
     counter_resilience: float = Field(ge=0.0, le=1.0)
@@ -25,6 +29,7 @@ class ScoreBreakdown(BaseModel):
 
     @property
     def composite(self) -> float:
+        """Weighted average of all four axes (weights: 0.3, 0.25, 0.25, 0.2)."""
         weights = [0.3, 0.25, 0.25, 0.2]
         values = [
             self.evidence_strength,
@@ -36,6 +41,8 @@ class ScoreBreakdown(BaseModel):
 
 
 class HypothesisScore(BaseModel):
+    """Final scored result for a hypothesis, including verdict and breakdown."""
+
     hypothesis_id: str
     breakdown: ScoreBreakdown
     verdict: Verdict
@@ -45,6 +52,7 @@ class HypothesisScore(BaseModel):
 
     @property
     def composite_score(self) -> float:
+        """Shortcut to the breakdown's weighted composite score."""
         return self.breakdown.composite
 
 

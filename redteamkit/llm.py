@@ -18,6 +18,8 @@ RETRY_BASE_DELAY = 1.0  # seconds
 
 
 class LLMConfig(BaseModel):
+    """Configuration for LLM API connections, loadable from environment variables."""
+
     base_url: str = Field(default="https://api.openai.com/v1")
     api_key: str = Field(default="")
     model: str = Field(default="gpt-4o")
@@ -34,6 +36,7 @@ class LLMConfig(BaseModel):
 
     @classmethod
     def from_env(cls) -> LLMConfig:
+        """Create config from REDTEAM_LLM_* environment variables."""
         return cls(
             base_url=os.environ.get("REDTEAM_LLM_BASE_URL", "https://api.openai.com/v1"),
             api_key=os.environ.get("REDTEAM_LLM_API_KEY", ""),
@@ -42,6 +45,8 @@ class LLMConfig(BaseModel):
 
 
 class LLMResponse(BaseModel):
+    """Parsed response from an LLM API call."""
+
     content: str
     model: str = ""
     usage: dict[str, int] = Field(default_factory=dict)

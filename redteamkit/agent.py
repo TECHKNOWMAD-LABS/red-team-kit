@@ -10,6 +10,8 @@ from pydantic import BaseModel, Field
 
 
 class AgentRole(str, Enum):
+    """Adversarial roles an agent can adopt during hypothesis evaluation."""
+
     DEVILS_ADVOCATE = "devils_advocate"
     CONTRARIAN = "contrarian"
     STRESS_TESTER = "stress_tester"
@@ -19,6 +21,8 @@ class AgentRole(str, Enum):
 
 
 class Critique(BaseModel):
+    """Structured output from an agent's evaluation of a hypothesis."""
+
     agent_id: str
     role: AgentRole
     hypothesis_id: str
@@ -39,6 +43,7 @@ class RedTeamAgent:
 
     @property
     def critiques(self) -> list[Critique]:
+        """Return a copy of all critiques produced by this agent."""
         return list(self._critiques)
 
     def critique(
@@ -69,6 +74,7 @@ class RedTeamAgent:
         return result
 
     def reset(self) -> None:
+        """Clear all stored critiques."""
         self._critiques.clear()
 
     def __repr__(self) -> str:

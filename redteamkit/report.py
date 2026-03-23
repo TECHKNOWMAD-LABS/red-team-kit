@@ -13,12 +13,16 @@ from redteamkit.scoring import Verdict
 
 
 class ReportSection(BaseModel):
+    """A single section within an assessment report."""
+
     title: str
     content: str
     data: dict[str, Any] = Field(default_factory=dict)
 
 
 class Report(BaseModel):
+    """Complete assessment report with sections and summary."""
+
     title: str
     generated_at: str
     sections: list[ReportSection] = Field(default_factory=list)
@@ -26,9 +30,11 @@ class Report(BaseModel):
     metadata: dict[str, Any] = Field(default_factory=dict)
 
     def to_json(self) -> str:
+        """Serialize the report to a JSON string."""
         return self.model_dump_json(indent=2)
 
     def to_dict(self) -> dict[str, Any]:
+        """Convert the report to a plain dictionary."""
         return self.model_dump()
 
 

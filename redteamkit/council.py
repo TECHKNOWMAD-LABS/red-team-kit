@@ -15,6 +15,8 @@ from redteamkit.scoring import HypothesisScore, HypothesisScorer
 
 
 class SessionRecord(BaseModel):
+    """Immutable record of a single adversarial evaluation session."""
+
     session_id: str
     hypothesis_id: str
     critiques: list[Critique] = Field(default_factory=list)
@@ -46,14 +48,17 @@ class AdversarialCouncil:
 
     @property
     def sessions(self) -> list[SessionRecord]:
+        """Return a copy of all session records."""
         return list(self._sessions)
 
     def add_agent(self, role: AgentRole) -> RedTeamAgent:
+        """Add a new agent with the given role to the council."""
         agent = RedTeamAgent(role=role)
         self.agents.append(agent)
         return agent
 
     def remove_agent(self, agent_id: str) -> bool:
+        """Remove an agent by ID. Returns True if an agent was removed."""
         before = len(self.agents)
         self.agents = [a for a in self.agents if a.agent_id != agent_id]
         return len(self.agents) < before
@@ -150,12 +155,14 @@ class AdversarialCouncil:
         return results
 
     def get_session(self, session_id: str) -> SessionRecord | None:
+        """Look up a session by ID, returning None if not found."""
         for s in self._sessions:
             if s.session_id == session_id:
                 return s
         return None
 
     def reset(self) -> None:
+        """Reset all agents and clear session history."""
         for agent in self.agents:
             agent.reset()
         self._sessions.clear()
