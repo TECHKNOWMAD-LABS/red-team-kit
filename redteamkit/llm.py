@@ -2,11 +2,19 @@
 
 from __future__ import annotations
 
+import asyncio
+import logging
 import os
+import time
 from typing import Any
 
 import httpx
 from pydantic import BaseModel, Field
+
+logger = logging.getLogger(__name__)
+
+MAX_RETRIES = 3
+RETRY_BASE_DELAY = 1.0  # seconds
 
 
 class LLMConfig(BaseModel):
@@ -39,37 +47,86 @@ class LLMClient:
     def __init__(self, config: LLMConfig | None = None) -> None:
         self.config = config or LLMConfig.from_env()
 
-    def complete(self, messages: list[dict[str, str]]) -> LLMResponse:
-        """Send a chat completion request synchronously."""
+    def complete(
+        self,
+        messages: list[dict[str, str]],
+        *,
+        retries: int = MAX_RETRIES,
+    ) -> LLMResponse:
+        """Send a chat completion request synchronously with retry logic."""
+        self._validate_messages(messages)
         headers = self._build_headers()
         payload = self._build_payload(messages)
 
-        with httpx.Client(timeout=self.config.timeout) as client:
-            resp = client.post(
-                f"{self.config.base_url}/chat/completions",
-                headers=headers,
-                json=payload,
-            )
-            resp.raise_for_status()
-            data = resp.json()
+        last_exc: Exception | None = None
+        for attempt in range(retries):
+            try:
+                with httpx.Client(timeout=self.config.timeout) as client:
+                    resp = client.post(
+                        f"{self.config.base_url}/chat/completions",
+                        headers=headers,
+                        json=payload,
+                    )
+                    resp.raise_for_status()
+                    data = resp.json()
+                return self._parse_response(data)
+            except (httpx.HTTPStatusError, httpx.ConnectError, httpx.TimeoutException) as exc:
+                last_exc = exc
+                if attempt < retries - 1:
+                    delay = RETRY_BASE_DELAY * (2 ** attempt)
+                    logger.warning(
+                        "LLM request failed (attempt %d/%d): %s — retrying in %.1fs",
+                        attempt + 1, retries, exc, delay,
+                    )
+                    time.sleep(delay)
+        raise last_exc  # type: ignore[misc]
 
-        return self._parse_response(data)
-
-    async def acomplete(self, messages: list[dict[str, str]]) -> LLMResponse:
-        """Send a chat completion request asynchronously."""
+    async def acomplete(
+        self,
+        messages: list[dict[str, str]],
+        *,
+        retries: int = MAX_RETRIES,
+    ) -> LLMResponse:
+        """Send a chat completion request asynchronously with retry logic."""
+        self._validate_messages(messages)
         headers = self._build_headers()
         payload = self._build_payload(messages)
 
-        async with httpx.AsyncClient(timeout=self.config.timeout) as client:
-            resp = await client.post(
-                f"{self.config.base_url}/chat/completions",
-                headers=headers,
-                json=payload,
-            )
-            resp.raise_for_status()
-            data = resp.json()
+        last_exc: Exception | None = None
+        for attempt in range(retries):
+            try:
+                async with httpx.AsyncClient(timeout=self.config.timeout) as client:
+                    resp = await client.post(
+                        f"{self.config.base_url}/chat/completions",
+                        headers=headers,
+                        json=payload,
+                    )
+                    resp.raise_for_status()
+                    data = resp.json()
+                return self._parse_response(data)
+            except (httpx.HTTPStatusError, httpx.ConnectError, httpx.TimeoutException) as exc:
+                last_exc = exc
+                if attempt < retries - 1:
+                    delay = RETRY_BASE_DELAY * (2 ** attempt)
+                    logger.warning(
+                        "Async LLM request failed (attempt %d/%d): %s — retrying in %.1fs",
+                        attempt + 1, retries, exc, delay,
+                    )
+                    await asyncio.sleep(delay)
+        raise last_exc  # type: ignore[misc]
 
-        return self._parse_response(data)
+    @staticmethod
+    def _validate_messages(messages: list[dict[str, str]]) -> None:
+        """Validate message format before sending to API."""
+        if not messages:
+            raise ValueError("messages must be a non-empty list")
+        for i, msg in enumerate(messages):
+            if not isinstance(msg, dict):
+                raise TypeError(f"messages[{i}] must be a dict, got {type(msg).__name__}")
+            if "role" not in msg or "content" not in msg:
+                raise ValueError(f"messages[{i}] must have 'role' and 'content' keys")
+            if not isinstance(msg["content"], str) or not msg["content"].strip():
+                raise ValueError(f"messages[{i}]['content'] must be a non-empty string")
 
     def generate_critique_prompt(
         self, hypothesis: str, role: str, context: str = ""
