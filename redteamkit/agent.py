@@ -51,6 +51,10 @@ class RedTeamAgent:
         **metadata: Any,
     ) -> Critique:
         """Produce a critique of the given hypothesis."""
+        if not hypothesis_id or not isinstance(hypothesis_id, str):
+            raise ValueError("hypothesis_id must be a non-empty string")
+        if not 0.0 <= confidence <= 1.0:
+            raise ValueError(f"confidence must be between 0.0 and 1.0, got {confidence}")
         result = Critique(
             agent_id=self.agent_id,
             role=self.role,

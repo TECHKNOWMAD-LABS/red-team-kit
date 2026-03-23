@@ -63,6 +63,10 @@ class AdversarialCouncil:
         confidence: float = 0.5,
     ) -> SessionRecord:
         """Run a full adversarial session where all agents critique a hypothesis."""
+        if not hypothesis_id or not isinstance(hypothesis_id, str):
+            raise ValueError("hypothesis_id must be a non-empty string")
+        if not self.agents:
+            raise ValueError("Council has no agents — add agents before running a session")
         session_id = uuid.uuid4().hex[:12]
         critiques: list[Critique] = []
 
