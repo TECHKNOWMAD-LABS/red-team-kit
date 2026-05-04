@@ -31,3 +31,6 @@ htmlcov/
 *.key
 credentials.json
 secrets.yaml
+
+# Added 2026-05-04 — hypothesis property test cache
+.hypothesis/
