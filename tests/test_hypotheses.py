@@ -18,8 +18,14 @@ EXPECTED_CATEGORIES = {
 }
 
 REQUIRED_FIELDS = {
-    "id", "category", "title", "statement", "assumptions",
-    "evidence_required", "risk_level", "tags",
+    "id",
+    "category",
+    "title",
+    "statement",
+    "assumptions",
+    "evidence_required",
+    "risk_level",
+    "tags",
 }
 
 

@@ -85,10 +85,13 @@ class LLMClient:
             except (httpx.HTTPStatusError, httpx.ConnectError, httpx.TimeoutException) as exc:
                 last_exc = exc
                 if attempt < retries - 1:
-                    delay = RETRY_BASE_DELAY * (2 ** attempt)
+                    delay = RETRY_BASE_DELAY * (2**attempt)
                     logger.warning(
                         "LLM request failed (attempt %d/%d): %s — retrying in %.1fs",
-                        attempt + 1, retries, exc, delay,
+                        attempt + 1,
+                        retries,
+                        exc,
+                        delay,
                     )
                     time.sleep(delay)
         raise last_exc  # type: ignore[misc]
@@ -119,10 +122,13 @@ class LLMClient:
             except (httpx.HTTPStatusError, httpx.ConnectError, httpx.TimeoutException) as exc:
                 last_exc = exc
                 if attempt < retries - 1:
-                    delay = RETRY_BASE_DELAY * (2 ** attempt)
+                    delay = RETRY_BASE_DELAY * (2**attempt)
                     logger.warning(
                         "Async LLM request failed (attempt %d/%d): %s — retrying in %.1fs",
-                        attempt + 1, retries, exc, delay,
+                        attempt + 1,
+                        retries,
+                        exc,
+                        delay,
                     )
                     await asyncio.sleep(delay)
         raise last_exc  # type: ignore[misc]

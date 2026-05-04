@@ -5,7 +5,7 @@ from __future__ import annotations
 import pytest
 from pydantic import ValidationError
 
-from redteamkit.llm import LLMConfig, LLMClient
+from redteamkit.llm import LLMConfig
 
 
 class TestSecretHandling:
@@ -62,12 +62,14 @@ class TestInputSanitization:
 
     def test_unicode_hypothesis(self):
         from redteamkit.agent import AgentRole, RedTeamAgent
+
         agent = RedTeamAgent(role=AgentRole.CONTRARIAN)
-        critique = agent.critique(hypothesis_id="H-\u200B\u00e9\u00f1\u00fc-001", confidence=0.5)
-        assert critique.hypothesis_id == "H-\u200B\u00e9\u00f1\u00fc-001"
+        critique = agent.critique(hypothesis_id="H-\u200b\u00e9\u00f1\u00fc-001", confidence=0.5)
+        assert critique.hypothesis_id == "H-\u200b\u00e9\u00f1\u00fc-001"
 
     def test_very_long_hypothesis_id(self):
         from redteamkit.agent import AgentRole, RedTeamAgent
+
         agent = RedTeamAgent(role=AgentRole.CONTRARIAN)
         long_id = "H-" + "x" * 10000
         critique = agent.critique(hypothesis_id=long_id, confidence=0.5)
@@ -75,6 +77,7 @@ class TestInputSanitization:
 
     def test_special_chars_in_challenges(self):
         from redteamkit.agent import AgentRole, RedTeamAgent
+
         agent = RedTeamAgent(role=AgentRole.CONTRARIAN)
         critique = agent.critique(
             hypothesis_id="H-001",

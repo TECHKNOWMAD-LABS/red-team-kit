@@ -7,6 +7,7 @@ and prints the verdict and score breakdown.
 
 from redteamkit import AdversarialCouncil
 
+
 def main() -> None:
     # Create a council with all 6 default adversarial roles
     council = AdversarialCouncil()
@@ -29,7 +30,7 @@ def main() -> None:
     if record.score:
         print(f"Verdict: {record.score.verdict.value}")
         print(f"Composite score: {record.score.composite_score:.4f}")
-        print(f"Breakdown:")
+        print("Breakdown:")
         bd = record.score.breakdown
         print(f"  Evidence strength:   {bd.evidence_strength:.4f}")
         print(f"  Assumption quality:  {bd.assumption_quality:.4f}")
