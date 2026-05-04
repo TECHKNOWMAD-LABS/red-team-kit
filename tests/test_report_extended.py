@@ -3,7 +3,6 @@
 from redteamkit.agent import AgentRole
 from redteamkit.council import AdversarialCouncil
 from redteamkit.report import ReportGenerator
-from redteamkit.scoring import Verdict
 
 
 def test_report_empty_sessions():
@@ -27,6 +26,7 @@ def test_report_verdict_distribution():
 def test_report_session_without_score():
     """Test report when sessions have no score (edge case)."""
     from redteamkit.council import SessionRecord
+
     session = SessionRecord(
         session_id="s-001",
         hypothesis_id="H-001",
@@ -46,4 +46,8 @@ def test_report_robust_vs_weak_summary():
     council.run_session("H-002", confidence=0.95)
     gen = ReportGenerator()
     report = gen.generate(council.sessions)
-    assert "robust" in report.summary.lower() or "weak" in report.summary.lower() or "2" in report.summary
+    assert (
+        "robust" in report.summary.lower()
+        or "weak" in report.summary.lower()
+        or "2" in report.summary
+    )

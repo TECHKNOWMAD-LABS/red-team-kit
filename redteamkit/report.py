@@ -72,8 +72,7 @@ class ReportGenerator:
         return ReportSection(
             title="Overview",
             content=(
-                f"Assessed {len(sessions)} hypothesis(es) "
-                f"with {total_critiques} total critiques."
+                f"Assessed {len(sessions)} hypothesis(es) with {total_critiques} total critiques."
             ),
             data={"hypothesis_ids": hypothesis_ids, "total_critiques": total_critiques},
         )

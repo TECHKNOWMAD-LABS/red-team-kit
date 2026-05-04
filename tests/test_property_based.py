@@ -2,14 +2,13 @@
 
 from __future__ import annotations
 
-from hypothesis import given, settings, assume
+from hypothesis import given, settings
 from hypothesis import strategies as st
 
 from redteamkit.agent import AgentRole, Critique, RedTeamAgent
-from redteamkit.scoring import HypothesisScorer, ScoreBreakdown, Verdict
 from redteamkit.council import AdversarialCouncil
 from redteamkit.report import Report, ReportGenerator
-
+from redteamkit.scoring import HypothesisScorer, ScoreBreakdown, Verdict
 
 # -- Strategies --
 

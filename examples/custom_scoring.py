@@ -52,8 +52,10 @@ def main() -> None:
     print("\n=== Baseline Only (no critiques) ===")
     for label, baseline in [("conservative", 0.5), ("optimistic", 0.8)]:
         result = default_scorer.score("H-002", [], baseline_strength=baseline)
-        print(f"  {label} (baseline={baseline}): "
-              f"verdict={result.verdict.value}, score={result.composite_score:.4f}")
+        print(
+            f"  {label} (baseline={baseline}): "
+            f"verdict={result.verdict.value}, score={result.composite_score:.4f}"
+        )
 
     print("\n=== Verdict Descriptions ===")
     for v in Verdict:

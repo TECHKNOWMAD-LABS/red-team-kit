@@ -2,11 +2,11 @@
 
 from __future__ import annotations
 
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import MagicMock
 
 import pytest
 
-from redteamkit.agent import AgentRole, Critique, RedTeamAgent
+from redteamkit.agent import AgentRole, Critique
 from redteamkit.council import AdversarialCouncil
 from redteamkit.llm import LLMClient, LLMConfig
 from redteamkit.scoring import HypothesisScorer
@@ -34,6 +34,7 @@ def llm_client(sample_config):
 @pytest.fixture
 def mock_httpx_response():
     """Factory for mock httpx responses."""
+
     def _make(content="Test response", model="test-model", status_code=200):
         data = {
             "choices": [{"message": {"content": content}}],
@@ -45,6 +46,7 @@ def mock_httpx_response():
         resp.json.return_value = data
         resp.raise_for_status = MagicMock()
         return resp
+
     return _make
 
 
